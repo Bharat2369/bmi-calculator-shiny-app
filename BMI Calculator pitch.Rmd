@@ -1,0 +1,39 @@
+---
+title: "BMI Calculator Pitch"
+author: "Bharat Dogra"
+date: "2025-04-12"
+output: ioslides_presentation
+---
+
+## Project Overview & Live Demo
+- **Enhanced BMI Calculator:** An interactive tool to calculate your BMI and understand your health status.
+- **Live App:** [Visit the App](http://bharat2369.shinyapps.io/BMIAPPUPDATED/)
+- **Source Code:** Available on GitHub: [https://github.com/Bharat2369/bmi-app](https://github.com/Bharat2369/bmi-app)
+
+## Problem & Motivation
+- **Health Context:**  
+  - Obesity and underweight issues are rising.
+  - BMI is a simple but often misunderstood measure of health.
+- **Challenge:**  
+  - Many find it hard to quickly assess their BMI without guidance.
+- **Our Solution:**  
+  - A self-assessment tool with clear visuals and step-by-step instructions.
+
+## Key Features & User Experience
+- **User Inputs:**  
+  - Weight (kg) and Height (cm) via numeric inputs.
+  - A button to trigger the calculation.
+- **Reactive Output:**  
+  - Calculates and displays BMI along with a health category.
+  - Dynamic visualization to show progress within BMI ranges.
+- **Documentation:**  
+  - In-app “Documentation” and “About” tabs to help even novice users.
+
+## Technical Implementation
+```{r, echo=TRUE}
+# Example BMI Calculation:
+weight <- 70                      # weight in kg
+height_m <- 170 / 100             # height in meters (converted)
+bmi_value <- weight / (height_m^2)
+bmi_value <- round(bmi_value, 2)
+bmi_value
